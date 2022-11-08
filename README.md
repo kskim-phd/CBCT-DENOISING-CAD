@@ -23,4 +23,45 @@ The setting of the virtual environment we used is described as osj_env.yaml.
 conda env create --file osj_env.yaml
 ```
 
+---
+
+# Pre-trained weights
+
+Denoising weight: https://drive.google.com/file/d/16xECqeDaei64KiWiIBoaJmjteeZUULak/view?usp=share_link
+
+ResNet weight: https://drive.google.com/file/d/1rbhoJPHuITF8dbW2_t8jCbDvb3SOzwER/view?usp=share_link
+
+```
+src
+   |-- main
+   |   |-- java
+   |   |   |-- com
+   |   |   |   |-- foxguardsolutions
+   |   |   |   |   |-- jonavon
+   |   |   |   |   |   |-- AbstractFile.java
+   |   |   |   |   |   |-- roman
+   |   |   |   |   |   |   |-- Main.java
+   |   |   |   |   |   |   |-- Numeral.java
+   |   |   |   |   |   |   |-- RomanNumberInputFile.java
+   |   |   |   |   |   |   |-- RomanNumeralToDecimalEvaluator.java
+   |-- test
+   |   |-- java
+   |   |   |-- com
+   |   |   |   |-- foxguardsolutions
+   |   |   |   |   |-- jonavon
+   |   |   |   |   |   |-- roman
+   |   |   |   |   |   |   |-- InterpretSteps.java
+   |   |   |   |   |   |   |-- RunCukesTest.java
+   |   |-- resources
+   |   |   |-- com
+   |   |   |   |-- foxguardsolutions
+   |   |   |   |   |-- jonavon
+   |   |   |   |   |   |-- roman
+   |   |   |   |   |   |   |-- Interpret.feature
+   |   |   |-- sample-input.txt
+   ```
+
+
+
+
 
