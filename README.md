@@ -19,6 +19,8 @@ External CBCT dataset : https://drive.google.com/file/d/1sxct8LRip1mV6k7Lm6hynQc
 # Environments
 
 The setting of the virtual environment we used is described as osj_env.yaml.
-
+```python
 conda env create --file osj_env.yaml
+```
+
 
