@@ -99,3 +99,11 @@ GRAD-CAM result
 AUC-ROC result
 
 ![ROC_AUC-1](https://user-images.githubusercontent.com/86760506/200550242-26ff3b9e-6bd3-4fc1-8ea8-c9f50bf293ca.png)
+
+---
+
+# Acknowledgements
+
+thanks to liutianlin0121 for sharing the denoising MUSC code.
+
+MUSC github: https://github.com/liutianlin0121/musc
