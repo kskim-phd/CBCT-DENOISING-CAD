@@ -84,6 +84,11 @@ Inference is started through OMU_inference.sh, and the inference shows GRAD-CAM 
 ```
 bash OMU_inference.sh
 ```
+The inference results are stored in /Classfication_OMU/3_Codes_external/eval/
+
+The GRAD-CAM results are stored in /Classfication_OMU/3_Codes_external/cam/
+
+---
 
 #Result
 
