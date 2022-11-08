@@ -76,6 +76,15 @@ bash OMU_train.sh
 ```
 The training results are stored in /Classfication_OMU/2_Codes_3D/eval/
 
+---
 
+# Inference
+
+Inference is started through OMU_inference.sh, and the inference shows GRAD-CAM and evaluation results.
+```
+bash OMU_inference.sh
+```
+
+#Result
 
 
