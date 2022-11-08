@@ -51,28 +51,20 @@ Classification_OMU
    |   |   |-- r3d18_K_200ep.pth
    |   |   |-- r3d34_K_200ep.pth
    |   |   |-- r3d50_K_200ep.pth
-   |   |   |   |   |-- jonavon
-   |   |   |   |   |   |-- AbstractFile.java
-   |   |   |   |   |   |-- roman
-   |   |   |   |   |   |   |-- Main.java
-   |   |   |   |   |   |   |-- Numeral.java
-   |   |   |   |   |   |   |-- RomanNumberInputFile.java
-   |   |   |   |   |   |   |-- RomanNumeralToDecimalEvaluator.java
-   |-- test
-   |   |-- java
-   |   |   |-- com
-   |   |   |   |-- foxguardsolutions
-   |   |   |   |   |-- jonavon
-   |   |   |   |   |   |-- roman
-   |   |   |   |   |   |   |-- InterpretSteps.java
-   |   |   |   |   |   |   |-- RunCukesTest.java
-   |   |-- resources
-   |   |   |-- com
-   |   |   |   |-- foxguardsolutions
-   |   |   |   |   |-- jonavon
-   |   |   |   |   |   |-- roman
-   |   |   |   |   |   |   |-- Interpret.feature
-   |   |   |-- sample-input.txt
+   |-- input
+   |   |-- train_jpg
+   |   |   |-- success_cbct_90
+   |-- input_external
+   |   |-- external_jpg_cbct_90
+   |-- ISTA-U-Net-main
+   |   |-- output_dir
+   |   |   |-- ct
+   |   |   |   |-- a3d5a1af-e159-43e4-ab89-473fc6af0ff5
+   |   |   |   |   |-- config_dict.pickle
+   |   |   |   |   |-- ista_unet.pt
+   |-- OMU_inference.sh
+   |-- OMU_train.sh
+   |-- osj_env.yaml
    ```
 
 
