@@ -95,3 +95,7 @@ The GRAD-CAM results are stored in /Classfication_OMU/3_Codes_external/cam/
 GRAD-CAM result
 
 ![GRAD_CAM-1](https://user-images.githubusercontent.com/86760506/200550101-99e5e887-ae94-477f-9998-1d1c8e7d3a2d.png)
+
+AUC-ROC result
+
+![ROC_AUC-1](https://user-images.githubusercontent.com/86760506/200550242-26ff3b9e-6bd3-4fc1-8ea8-c9f50bf293ca.png)
