@@ -66,7 +66,15 @@ Classification_OMU
    |-- OMU_train.sh
    |-- osj_env.yaml
    ```
+---
 
+# Train
+
+The training denoising image is set automatically, and each 5 fold image is created at the same time as OMU_train.sh is executed, and key slice-selector and classification 5-fold training are automatically performed.
+```
+bash OMU_train.sh
+```
+The training results are stored in /Classfication_OMU/2_Codes_3D/eval/
 
 
 
