@@ -32,11 +32,25 @@ Denoising weight: https://drive.google.com/file/d/16xECqeDaei64KiWiIBoaJmjteeZUU
 ResNet weight: https://drive.google.com/file/d/1rbhoJPHuITF8dbW2_t8jCbDvb3SOzwER/view?usp=share_link
 
 ```
-src
-   |-- main
-   |   |-- java
-   |   |   |-- com
-   |   |   |   |-- foxguardsolutions
+Classification_OMU
+   |-- 1_Codes_pre
+   |-- 2_Codes_3D
+   |   |-- 3D_logs
+   |   |-- 3D_weights
+   |   |-- cam
+   |   |-- eval
+   |   |-- models
+   |   |   |-- r3d18_K_200ep.pth `#f03c15`
+   |   |   |-- r3d34_K_200ep.pth `#f03c15`
+   |   |   |-- r3d50_K_200ep.pth `#f03c15`
+   |-- 3_Codes_external
+   |   |-- cam
+   |   |-- eval
+   |   |-- key_logs
+   |   |-- models
+   |   |   |-- r3d18_K_200ep.pth
+   |   |   |-- r3d34_K_200ep.pth
+   |   |   |-- r3d50_K_200ep.pth
    |   |   |   |   |-- jonavon
    |   |   |   |   |   |-- AbstractFile.java
    |   |   |   |   |   |-- roman
