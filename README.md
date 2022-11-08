@@ -94,4 +94,4 @@ The GRAD-CAM results are stored in /Classfication_OMU/3_Codes_external/cam/
 
 GRAD-CAM result
 
-![GRAD-CAM](https://github.com/kskim-phd/CBCT-DENOISING-CAD/blob/main/paper_image/GRAD_CAM.pdf)
+![GRAD_CAM.pdf](https://github.com/kskim-phd/CBCT-DENOISING-CAD/files/9960496/GRAD_CAM.pdf)
