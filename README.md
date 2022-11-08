@@ -11,6 +11,7 @@ Detailed instructions for train/testing the image are as follows.
 OMU-Denoising-CAD implementation based on pytorch
 
 Internal CBCT dataset : https://drive.google.com/file/d/1oW35VoVKf7W1NBstty1rghGxHWXEgSg2/view?usp=share_link
+
 External CBCT dataset : https://drive.google.com/file/d/1sxct8LRip1mV6k7Lm6hynQcFx4ZDmujN/view?usp=share_link
 
 ---
