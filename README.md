@@ -40,9 +40,9 @@ Classification_OMU
    |   |-- cam
    |   |-- eval
    |   |-- models
-   |   |   |-- r3d18_K_200ep.pth `#f03c15`
-   |   |   |-- r3d34_K_200ep.pth `#f03c15`
-   |   |   |-- r3d50_K_200ep.pth `#f03c15`
+   |   |   |-- r3d18_K_200ep.pth
+   |   |   |-- r3d34_K_200ep.pth
+   |   |   |-- r3d50_K_200ep.pth
    |-- 3_Codes_external
    |   |-- cam
    |   |-- eval
