@@ -35,18 +35,12 @@ ResNet weight: https://drive.google.com/file/d/1rbhoJPHuITF8dbW2_t8jCbDvb3SOzwER
 Classification_OMU
    |-- 1_Codes_pre
    |-- 2_Codes_3D
-   |   |-- 3D_logs
-   |   |-- 3D_weights
-   |   |-- cam
-   |   |-- eval
    |   |-- models
+   |   |-- warmup_scheduler
    |   |   |-- r3d18_K_200ep.pth
    |   |   |-- r3d34_K_200ep.pth
    |   |   |-- r3d50_K_200ep.pth
    |-- 3_Codes_external
-   |   |-- cam
-   |   |-- eval
-   |   |-- key_logs
    |   |-- models
    |   |   |-- r3d18_K_200ep.pth
    |   |   |-- r3d34_K_200ep.pth
