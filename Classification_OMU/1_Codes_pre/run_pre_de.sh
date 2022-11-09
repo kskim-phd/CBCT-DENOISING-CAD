@@ -1,7 +1,5 @@
 #!/bin/bash
 SECONDS=0
-source /home/dgxadmin/anaconda3/etc/profile.d/conda.sh
-conda activate osj_env
 export CUDA_VISIBLE_DEVICES=0,1,2,3:
 
 ## Setting ##
