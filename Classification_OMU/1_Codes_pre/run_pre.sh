@@ -17,10 +17,10 @@ IMG_SIZE=300 # 300, Center crop image size
 ## Pre-processing of the ID change, making for 5-folds, extraction from dicom to jpg, and extraction of csv for dicom header  
 
 # Training for key slice selector
-#for FOLD in 0 1 2 3 4
-#do
-#    python "$(dirname $0)/2_train_keyslice.py" --num_workers ${WORKERS} --n_epochs ${N_EPOCHS} --init_lr ${INIT_LR} --fold ${FOLD} --batch_size ${BATCH} --image_size ${IMG_SIZE} --kernel_type ${SAVE_NAME} --DEBUG ${DEBUG} --model ${MODEL}
-#done
+for FOLD in 0 1 2 3 4
+do
+    python "$(dirname $0)/2_train_keyslice.py" --num_workers ${WORKERS} --n_epochs ${N_EPOCHS} --init_lr ${INIT_LR} --fold ${FOLD} --batch_size ${BATCH} --image_size ${IMG_SIZE} --kernel_type ${SAVE_NAME} --DEBUG ${DEBUG} --model ${MODEL}
+done
 
 ## Inference for key slice
 for FOLD in 0 1 2 3 4
