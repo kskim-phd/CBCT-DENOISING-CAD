@@ -1,6 +1,4 @@
 #!/bin/bash
-source /home/dgxadmin/anaconda3/etc/profile.d/conda.sh
-conda activate osj_env
 export CUDA_VISIBLE_DEVICES=0,1,2,3:
 # python ISTA-U-Net-main/ista_unet/train_ct.py #train ISTA-U-NET
 python "$(dirname $0)/"ISTA-U-Net-main/ista_unet/evaluation.py
