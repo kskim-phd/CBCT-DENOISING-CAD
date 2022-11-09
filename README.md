@@ -18,7 +18,7 @@ External CBCT dataset : https://drive.google.com/file/d/1sxct8LRip1mV6k7Lm6hynQc
 
 # Environments
 
-The setting of the virtual environment we used is described as requirements.txt
+Required libraries for training/inference are detailed in requirements.txt
 ```python
 pip install -r requirements.txt
 ```
