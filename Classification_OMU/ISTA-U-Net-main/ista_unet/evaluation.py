@@ -10,7 +10,6 @@ from tqdm import tqdm
 # from ista_unet import *
 from models import ista_unet
 from evaluate import *
-from load_dival_datasets import RandomAccessTestDataset
 from dival.measure import PSNR, SSIM
 from piq import psnr
 import torch
