@@ -68,7 +68,7 @@ The training denoising image is set automatically, and each 5 fold image is crea
 ```
 bash OMU_train.sh
 ```
-The training results are stored in /Classfication_OMU/2_Codes_3D/eval/
+The internal dataset training results are stored in /Classfication_OMU/2_Codes_3D/eval/
 
 ---
 
@@ -78,9 +78,9 @@ Inference is started through OMU_inference.sh, and the inference shows GRAD-CAM 
 ```
 bash OMU_inference.sh
 ```
-The inference results are stored in /Classfication_OMU/3_Codes_external/eval/
+The external dataset inference results are stored in /Classfication_OMU/3_Codes_external/eval/
 
-The GRAD-CAM results are stored in /Classfication_OMU/3_Codes_external/cam/
+The external dataset GRAD-CAM results are stored in /Classfication_OMU/3_Codes_external/cam/
 
 ---
 
