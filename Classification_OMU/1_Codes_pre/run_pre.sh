@@ -23,7 +23,7 @@ done
 ## Inference for key slice
 for FOLD in 0 1 2 3 4
 do 
-    WEIGHT=key_weights/${SAVE_NAME}/${SAVE_NAME}_best_fold${FOLD}.pth
+    WEIGHT="$(dirname $0)"/key_weights/${SAVE_NAME}/${SAVE_NAME}_best_fold${FOLD}.pth
     echo $WEIGHT
     python "$(dirname $0)/3_inference_keyslice.py" --image_size ${IMG_SIZE} --kernel_type ${SAVE_NAME} --fold ${FOLD} --batch_size ${BATCH} --weight_dir ${WEIGHT} --num_workers ${WORKERS} --model ${MODEL} --DEBUG ${DEBUG}
 done
