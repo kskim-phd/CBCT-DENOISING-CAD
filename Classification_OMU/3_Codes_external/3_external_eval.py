@@ -187,7 +187,7 @@ def run():
     df = df[df.key_target == 1].reset_index(drop=True)
     
     df['target']=-1
-    df['LABEL'] = df.Label
+    df['LABEL'] = df.LABEL
     df.loc[df.LABEL=="F","target"] = 2
     df.loc[df.LABEL=="S","target"] = 1
     df.loc[df.LABEL=="N","target"] = 0
