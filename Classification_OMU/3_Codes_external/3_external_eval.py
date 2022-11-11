@@ -50,7 +50,7 @@ class OMUDataset3D(torch.utils.data.Dataset, Randomizable):
     def __getitem__(self, index):
         patient = self.patients[index]
         patient_df = self.csv.loc[self.csv.ID == patient].sort_values('order')
-        LABEL = patient_df.LABEL.to_list()[0]
+        LABEL = patient_df.Label.to_list()[0]
         ID = patient_df.ID.to_list()[0]
         jpg_lst = patient_df.file_name.to_list()
         jpg_lst = [os.path.join(args.data_dir, 'external_jpg_cbct_90', "Ex_" + f"{LABEL}_{ID:08d}", f"{f:04}.jpg") for f in jpg_lst]
@@ -187,10 +187,9 @@ def run():
     df = df[df.key_target == 1].reset_index(drop=True)
     
     df['target']=-1
-    df['LABEL'] = df.LABEL
-    df.loc[df.LABEL=="F","target"] = 2
-    df.loc[df.LABEL=="S","target"] = 1
-    df.loc[df.LABEL=="N","target"] = 0
+    df.loc[df.Label=="F","target"] = 2
+    df.loc[df.Label=="S","target"] = 1
+    df.loc[df.Label=="N","target"] = 0
 
 
     transform2D = albumentations.Compose([albumentations.CenterCrop(height = args.crop_size, width = args.crop_size, p=1)])
@@ -368,7 +367,7 @@ if __name__ == '__main__':
     parser.add_argument("--model", type=str, default="resnet18") # densenet121, resnet18, resnet34,resnet50 
     parser.add_argument("--df_dir", type=str, default='/'.join(os.path.dirname(os.path.abspath(__file__)).split('/')[0:-1])+"/3_Codes_external/key_logs/cbct_90_noise/")
     parser.add_argument("--key_thresh", type=float, default=0.5)
-    parser.add_argument("--save_name", type=str, default="02_28_noisy_resnet18_batch16_aug0.5_key0.5")
+    parser.add_argument("--save_name", type=str, default="cbct_90_noise_resnet18_batch16_aug0.5_key0.5")
 
     args, _ = parser.parse_known_args()
     print(args)

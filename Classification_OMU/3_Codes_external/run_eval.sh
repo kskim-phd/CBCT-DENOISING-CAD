@@ -16,12 +16,12 @@ KEY=0.5
 # Inference for key slice
 
 #python 2_external_keyslice.py --image_size ${IMG_SIZE} --kernel_type cbct_90_noise --batch_size ${BATCH_KEY} --num_workers ${WORKERS} --model b0
-python "$(dirname $0)/2_external_keyslice.py" --image_size ${IMG_SIZE} --kernel_type cbct_90_noise --batch_size ${BATCH_KEY} --num_workers ${WORKERS} --model b0
+#python "$(dirname $0)/2_external_keyslice.py" --image_size ${IMG_SIZE} --kernel_type cbct_90_noise --batch_size ${BATCH_KEY} --num_workers ${WORKERS} --model b0
 
 # Inference for 3D CNN
 
 #python 3_external_eval.py --crop_size ${IMG_SIZE} --save_name cbct_90_noise_resnet18_batch16_aug0.5_key0.5 --batch_size ${BATCH_3D} --key_thresh ${KEY}
-python "$(dirname $0)/3_external_eval.py" --crop_size ${IMG_SIZE} --save_name cbct_90_noise_resnet18_batch16_aug0.5_key0.5 --batch_size ${BATCH_3D} --key_thresh ${KEY}
+#python "$(dirname $0)/3_external_eval.py" --crop_size ${IMG_SIZE} --save_name cbct_90_noise_resnet18_batch16_aug0.5_key0.5 --batch_size ${BATCH_3D} --key_thresh ${KEY}
 
 
 # # Generate for Grad-Cam

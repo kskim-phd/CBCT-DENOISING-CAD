@@ -128,9 +128,9 @@ if __name__ == '__main__':
     parser.add_argument('--fold', type=int, default=0)
     parser.add_argument("--num_workers", type=int, default=0)
     parser.add_argument("--model", type=str, default="resnet18") # densenet121, resnet18, resnet34,resnet50 
-    parser.add_argument("--df_dir", type=str, default='/'.join(os.path.dirname(os.path.abspath(__file__)).split('/')[0:-1])+"/3_Codes_external/key_logs/cbct_90/")
+    parser.add_argument("--df_dir", type=str, default='/'.join(os.path.dirname(os.path.abspath(__file__)).split('/')[0:-1])+"/3_Codes_external/key_logs/cbct_90_noise/")
     parser.add_argument("--key_thresh", type=float, default=0.5)
-    parser.add_argument("--save_name", type=str, default="02_22_cbct_syn_resnet18_batch16_aug0.5_key0.5")
+    parser.add_argument("--save_name", type=str, default="cbct_90_noise_resnet18_batch16_aug0.5_key0.5")
 
     args, _ = parser.parse_known_args()
     print(args)

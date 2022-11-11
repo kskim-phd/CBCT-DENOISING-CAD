@@ -101,10 +101,11 @@ for args.fold in [0,1,2,3,4]:
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     if torch.cuda.is_available(): scaler = torch.cuda.amp.GradScaler()
 
-    os.makedirs("key_logs", exist_ok=True)
-    os.makedirs(f"key_logs/{args.kernel_type}", exist_ok=True)
-    with open(f'key_logs/{args.kernel_type}/set.txt', 'a') as appender:
+    os.makedirs('/'.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))).split('/')[0:-1])+"/Classification_OMU/3_Codes_external/key_logs", exist_ok=True)
+    os.makedirs('/'.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))).split('/')[0:-1])+f"/Classification_OMU/3_Codes_external/key_logs/{args.kernel_type}", exist_ok=True)
+    with open('/'.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))).split('/')[0:-1])+f'/Classification_OMU/3_Codes_external/key_logs/{args.kernel_type}/set.txt', 'a') as appender:
         appender.write(str(args) + '\n')
+
 
     df = pd.read_csv(os.path.join('/'.join(os.path.dirname(os.path.abspath(__file__)).split('/')[0:-1])+'/input_external/outputs/external_newID.csv'))
 
@@ -142,4 +143,4 @@ for args.fold in [0,1,2,3,4]:
     if torch.cuda.device_count() > 1: model = nn.DataParallel(model)
     _, PROBS = predict_df(model, df_loader)
     df['ref_pred']=PROBS
-    df.to_csv(f"key_logs/{args.kernel_type}/df_external_{args.kernel_type}_fold{args.fold}.csv", index=False)
+    df.to_csv('/'.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))).split('/')[0:-1])+f'/Classification_OMU/3_Codes_external/'+f"/key_logs/{args.kernel_type}/df_external_{args.kernel_type}_fold{args.fold}.csv", index=False)
