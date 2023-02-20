@@ -1,7 +1,7 @@
 # CBCT-Denoising-CAD
 We release OMU-Denoising-CAD train/test code.
 
-Contributors: Kyungsu Kim* , Chae-yeon Lim*
+Contributors: Chae-yeon Lim*, Kyungsu Kim*
 
 Detailed instructions for train/testing the image are as follows.
 
